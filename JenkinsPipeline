@@ -66,6 +66,13 @@ pipeline{
             }
         }
 
+        stage('Complete')
+        {
+            steps
+            {
+            echo 'Build is Complete'
+            }
+        }
 
 
     }
