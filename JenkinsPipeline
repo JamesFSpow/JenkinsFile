@@ -65,13 +65,7 @@ pipeline{
             echo 'Tool: AWS EC2 - Used to deploy application to a production environmentsS'
             }
         }
-        stage('Complete')
-        {
-            steps
-            {
-            echo 'Build is Complete'
-            }
-        }
+
 
     }
 
