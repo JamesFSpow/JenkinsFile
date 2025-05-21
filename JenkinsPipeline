@@ -41,20 +41,29 @@ pipeline{
 
         stage('Deploy to Staging')
         {
+            steps
+            {    
             echo 'Stage 5: Deploy to Staging'
             echo 'Tool: AWS CLI - To deploy the application to a staging environment'
+            }
         }
 
         stage('Integration Tests on Staging')
         {
+            steps
+            {
             echo 'Stage 6: Integration Tests on Staging'
             echo 'Tool: Selenium - Used for end-to-end integration on the staging environment'
+            }
         }
 
         stage('Deploy to Production')
         {
+            steps
+            {
             echo 'Stage 7: Deploy to Production'
             echo 'Tool: AWS EC2 - Used to deploy application to a production environmentsS'
+            }
         }
     }
 
